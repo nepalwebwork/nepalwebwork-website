@@ -1,465 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Contact | Nepal Webwork</title>
-
-    <meta
-        name="description"
-        content="Contact Nepal Webwork about your website, travel, hospitality, marketing or digital project."
-    >
-
-    <link rel="stylesheet" href="style.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Nepal Webwork</title>
+<meta name="description" content="Get in touch with Nepal Webwork to start your website, e-commerce, or branding project.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
 
-
-<header class="header">
-
-    <div class="container nav">
-
-        <a href="index.html" class="logo">
-
-            <div class="logo-mark">
-                NW
-            </div>
-
-            Nepal <span>Webwork</span>
-
-        </a>
-
-
-        <nav class="nav-links">
-
-            <a href="index.html">
-                Home
-            </a>
-
-            <a href="about.html">
-                About
-            </a>
-
-            <a href="services.html">
-                Services
-            </a>
-
-            <a href="contact.html" class="active">
-                Contact
-            </a>
-
-        </nav>
-
-
-        <a href="contact.html" class="nav-cta">
-            Let's Talk →
-        </a>
-
-
-        <button class="menu-toggle">
-            ☰
-        </button>
-
+<header class="site-header">
+  <nav class="nav container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      Nepal Webwork
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
     </div>
-
+  </nav>
 </header>
-
 
 <main>
 
-
-<section class="page-hero">
-
+  <section class="page-header">
     <div class="container">
-
-        <div class="section-tag">
-            Get In Touch
-        </div>
-
-        <h1>
-            Let's talk about
-            your next idea.
-        </h1>
-
-        <p>
-            Whether you're starting something new or improving
-            something existing, we'd love to hear what you're working on.
-        </p>
-
+      <div class="hero-rule"></div>
+      <h1>Let's build something together</h1>
+      <p>Tell us about your project and we'll get back to you within 24 hours.</p>
     </div>
+  </section>
 
-</section>
-
-
-<section class="section">
-
+  <section style="padding-top:24px;">
     <div class="container contact-grid">
 
-
-        <div class="contact-info">
-
-            <div class="section-tag">
-                Contact Nepal Webwork
-            </div>
-
-            <h2>
-                Tell us what
-                you're building.
-            </h2>
-
-            <p>
-                Share a little about your business, project or idea.
-                We'll take it from there.
-            </p>
-
-
-            <div class="contact-details">
-
-                <div class="contact-detail">
-
-                    <strong>
-                        Email
-                    </strong>
-
-                    <span>
-                        hello@nepalwebwork.com
-                    </span>
-
-                </div>
-
-
-                <div class="contact-detail">
-
-                    <strong>
-                        Location
-                    </strong>
-
-                    <span>
-                        Nepal
-                    </span>
-
-                </div>
-
-
-                <div class="contact-detail">
-
-                    <strong>
-                        Work With Us
-                    </strong>
-
-                    <span>
-                        Websites · Travel · Hospitality · Digital Growth
-                    </span>
-
-                </div>
-
-            </div>
-
+      <form>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
         </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+977 ...">
+          </div>
+          <div class="form-field">
+            <label for="business">Business name (optional)</label>
+            <input type="text" id="business" name="business" placeholder="Your business">
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="message">Project details</label>
+          <textarea id="message" name="message" rows="6" placeholder="What are you looking to build?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send message</button>
+      </form>
 
-
-        <form class="contact-form">
-
-            <div class="form-grid">
-
-
-                <div class="form-group">
-
-                    <label for="name">
-                        Name
-                    </label>
-
-                    <input
-                        id="name"
-                        type="text"
-                        placeholder="Your name"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="email">
-                        Email
-                    </label>
-
-                    <input
-                        id="email"
-                        type="email"
-                        placeholder="you@example.com"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="company">
-                        Company / Business
-                    </label>
-
-                    <input
-                        id="company"
-                        type="text"
-                        placeholder="Your business"
-                    >
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="service">
-                        What do you need?
-                    </label>
-
-                    <select id="service">
-
-                        <option>
-                            Select a service
-                        </option>
-
-                        <option>
-                            Website & Web Development
-                        </option>
-
-                        <option>
-                            Travel & Hospitality
-                        </option>
-
-                        <option>
-                            OTA & Booking Management
-                        </option>
-
-                        <option>
-                            Digital Marketing
-                        </option>
-
-                        <option>
-                            Branding & Creative
-                        </option>
-
-                        <option>
-                            SEO & Online Growth
-                        </option>
-
-                        <option>
-                            Something else
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <div class="form-group full">
-
-                    <label for="message">
-                        Tell us about your project
-                    </label>
-
-                    <textarea
-                        id="message"
-                        placeholder="Tell us a little about your project..."
-                        required
-                    ></textarea>
-
-                </div>
-
-
-                <div class="form-group full">
-
-                    <button
-                        type="submit"
-                        class="btn btn-primary"
-                    >
-                        Send Inquiry →
-                    </button>
-
-                </div>
-
-
-            </div>
-
-        </form>
-
+      <div>
+        <div class="contact-info-card">
+          <h3>Contact information</h3>
+          <div class="info-line">
+            <span class="info-label">Address</span>
+            <span class="info-value">Kathmandu, Nepal</span>
+          </div>
+          <div class="info-line">
+            <span class="info-label">Phone</span>
+            <span class="info-value">+977-XXXXXXXXXX</span>
+          </div>
+          <div class="info-line">
+            <span class="info-label">Email</span>
+            <span class="info-value">info@nepalwebwork.com</span>
+          </div>
+          <div class="info-line">
+            <span class="info-label">Business hours</span>
+            <span class="info-value">Sun–Fri, 10:00 AM – 6:00 PM</span>
+          </div>
+        </div>
+        <div class="map-block">
+          <iframe
+            title="Nepal Webwork location"
+            src="https://www.google.com/maps?q=Kathmandu,Nepal&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
 
     </div>
+  </section>
 
-</section>
-
-
-<section class="cta">
-
+  <section>
     <div class="container">
-
-        <div class="cta-box">
-
-            <h2>
-                Good ideas start
-                with a conversation.
-            </h2>
-
-            <p>
-                Let's explore what we can build together.
-            </p>
-
-        </div>
-
+      <div class="section-head">
+        <div class="hero-rule"></div>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div>
+        <details class="faq-item">
+          <summary>How long does a project take?</summary>
+          <p>Most websites are delivered within 2–4 weeks depending on scope.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you provide hosting?</summary>
+          <p>Yes, we offer reliable hosting and domain registration as part of every package.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I update the website myself later?</summary>
+          <p>Yes, we build on easy-to-manage platforms and can train you to make basic edits.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What if I need changes after launch?</summary>
+          <p>Our maintenance plans cover ongoing updates, or we can handle one-off change requests.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you accept payments in installments?</summary>
+          <p>Yes, we offer flexible payment plans for most packages.</p>
+        </details>
+      </div>
     </div>
-
-</section>
-
+  </section>
 
 </main>
 
-
-<footer class="footer">
-
-    <div class="container">
-
-        <div class="footer-grid">
-
-
-            <div class="footer-brand">
-
-                <a href="index.html" class="logo">
-
-                    <div class="logo-mark">
-                        NW
-                    </div>
-
-                    Nepal <span>Webwork</span>
-
-                </a>
-
-                <p>
-                    Building digital experiences, platforms and
-                    solutions for businesses ready to grow online.
-                </p>
-
-            </div>
-
-
-            <div>
-
-                <h4>
-                    Navigation
-                </h4>
-
-                <div class="footer-links">
-
-                    <a href="index.html">
-                        Home
-                    </a>
-
-                    <a href="about.html">
-                        About
-                    </a>
-
-                    <a href="services.html">
-                        Services
-                    </a>
-
-                    <a href="contact.html">
-                        Contact
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div>
-
-                <h4>
-                    Services
-                </h4>
-
-                <div class="footer-links">
-
-                    <a href="services.html">
-                        Web Development
-                    </a>
-
-                    <a href="services.html">
-                        Travel Solutions
-                    </a>
-
-                    <a href="services.html">
-                        Marketing
-                    </a>
-
-                    <a href="services.html">
-                        Branding
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div>
-
-                <h4>
-                    Contact
-                </h4>
-
-                <div class="footer-links">
-
-                    <a href="mailto:hello@nepalwebwork.com">
-                        hello@nepalwebwork.com
-                    </a>
-
-                    <a href="contact.html">
-                        Start a project →
-                    </a>
-
-                </div>
-
-            </div>
-
-
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          Nepal Webwork
         </div>
-
-
-        <div class="footer-bottom">
-
-            <span>
-                © 2026 Nepal Webwork. All rights reserved.
-            </span>
-
-            <div class="socials">
-
-                <a href="#">
-                    f
-                </a>
-
-                <a href="#">
-                    ig
-                </a>
-
-                <a href="#">
-                    in
-                </a>
-
-            </div>
-
-        </div>
-
+        <p>Helping Nepalese businesses build a credible, professional online presence.</p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Website Design</a></li>
+          <li><a href="services.html">E-commerce</a></li>
+          <li><a href="services.html">SEO &amp; Marketing</a></li>
+          <li><a href="services.html">Branding</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Kathmandu, Nepal</li>
+          <li>info@nepalwebwork.com</li>
+          <li>+977-XXXXXXXXXX</li>
+        </ul>
+      </div>
     </div>
-
+    <div class="footer-bottom">
+      <span>© 2026 Nepal Webwork. Founded by Nischal Rasaili.</span>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/nepalwebwork/" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">ig</a>
+      </div>
+    </div>
+  </div>
 </footer>
 
-
+<script src="script.js"></script>
 </body>
 </html>
